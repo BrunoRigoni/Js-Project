@@ -43,6 +43,11 @@ form {
         border: none;
         background-color: #f1f1f1;
         cursor: text;
+        color: rgb(84, 84, 84);
+
+        &::placeholder {
+            color: gray;
+        }
     }
 
     & .btn-enter {
@@ -55,10 +60,12 @@ form {
         grid-column: 1 / -1;
         font-weight: bold;
         border: 1px solid var(--main-bg-color);
+        background-color: var(--btn-color);
+        color: white;
 
         &:hover {
 
-            background-color: var(--btn-color);
+            background-color: var(--btn-hover);
             color: white;
         }
         
@@ -66,11 +73,21 @@ form {
 
 
     & p {
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
         font-family: var(--ff-inter);
         margin-top: 1.5rem ;
         font-size:  1rem/140%;
         grid-column: 1 / -1;
     }
 
+    & a:last-child {
+        margin-top: 1rem ;
+        text-decoration: none;
+        color: gray;
+
+    }
 
 }
