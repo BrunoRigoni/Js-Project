@@ -1,0 +1,28 @@
+@import url(../login-screen/index.css);
+
+
+.username-message {
+    display: none;
+}
+
+#login-error {
+        display: hide;
+    color: var(--error-border);
+    border: 2px solid var(--error-border);
+    background-color:var(--error-color) ;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.show-user-error {
+    display: hide;
+}
+
+.close-alert {
+
+    margin-inline: 1rem .5rem;
+    cursor: pointer;
+    background-color: var(--error-color);
+    border: none;
+    color: var(--error-border);
+}

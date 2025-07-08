@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login-screen/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div id="app">
+        <form action="/login" method="post" id="form-login">
+            <label for="username">Usuário: </label>
+            <input type="text" id="username" name="username" placeholder="Nome ou email: " required>
+
+            <label for="password" name="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+
+            <button id="login-btn" class="btn-enter" type="submit">Entrar</button>
+
+            <p><a href="/recuperar-senha">Esqueceu a senha?</a></p>
+
+        </form>
+
+        <div id="login-error" class="username-message"><button class="close-alert">X</button> Erro, usuário ou senha incorretos.</div>
+    </div>
+
+    
+    <script src="login.js"></script>
+</body>
+</html>
