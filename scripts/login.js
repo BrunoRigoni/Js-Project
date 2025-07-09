@@ -15,14 +15,20 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const usernameError = document.getElementById("login-error")
-    const adminUser = "admin"
-    const adminPass = "admin"
 
-    const username = document.getElementById("username").value.trim();
+    const usermail = document.getElementById("usermail").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    if (username === adminUser && password === adminPass) {
-        alert("Login efetuado com sucesso.")
+    const savedUser = JSON.parse(localStorage.getItem("users"))
+
+    if (!savedUser) {
+        alert("Nenhum usuário cadastrado!")
+        return
+    }
+
+    if (usermail === savedUser.email && password === savedUser.password) {
+        alert(`Login efetuado com sucesso. Seja bem vindo ${savedUser.name}`)
+        window.location.href = "dashboard.html"
 
     } else {
         usernameError.classList.remove("username-message")
