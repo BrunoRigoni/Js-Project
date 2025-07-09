@@ -1,32 +1,6 @@
-@import url(../login-screen/index.css);
+@import url(../maincfg/index.css);
 @import url(../login-screen/error.css);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color:  var(--main-bg-color);
-    font-family: var(--ff-inter);
-}
-
-#app {
-    background-color: white;
-    padding: 4rem 6rem;
-    width: max-content;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
-}
 
 form {
     display: grid;
@@ -38,7 +12,7 @@ form {
 
 
     & input {
-        padding: .5rem;
+        padding: 1rem;
         border-radius: .5rem;
         border: none;
         background-color: #f1f1f1;
@@ -46,6 +20,8 @@ form {
         color: rgb(84, 84, 84);
 
         &::placeholder {
+            font: normal 1rem/140% var(--ff-inter);
+            align-items: center;
             color: gray;
         }
     }

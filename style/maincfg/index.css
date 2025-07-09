@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+:root {
+    --main-bg-color: #f1f1f1;
+    --btn-color: #1877f2;
+    --btn-hover: #086df1;
+
+    --ff-inter: "Inter", sans-serif;
+
+
+    --error-border: #ffd900;
+    --error-color: #fff9d7;
+
+
+
+    
+
+
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color:  var(--main-bg-color);
+    font-family: var(--ff-inter);
+}
+
+#app {
+    background-color: white;
+    padding: 4rem 6rem;
+    width: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: -9px 11px 10px rgba(0, 0, 0, 0.1);
+
+}

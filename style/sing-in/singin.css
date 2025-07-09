@@ -1,0 +1,101 @@
+@import url(../maincfg/index.css);
+
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color:  var(--main-bg-color);
+    font-family: var(--ff-inter); 
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: var(--ff-inter);
+    color: black;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.5rem;
+  max-width: 31.25rem;
+
+  & label {
+    text-align: center;
+    place-content: center;
+  }
+
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: text;
+    color: rgb(84, 84, 84);
+  }
+
+  
+  & input::placeholder {
+    font: normal 1rem/140% var(--ff-inter);
+    align-items: center;
+    color: gray;
+
+  }
+
+  & .terms {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    position: relative;
+
+
+    & input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      bottom: 0;
+      
+
+    }
+
+    & label {
+      margin: 0;
+      font-size: 0.9rem;
+      text-align: left;
+
+      & p {
+        margin-left: 1.5rem;
+      }
+
+    }
+  }
+
+  button {
+        margin-top: 1rem;
+        border-radius: 8px;
+        border: none;
+        padding: .5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        grid-column: 1 / -1;
+        font-weight: bold;
+        border: 1px solid var(--main-bg-color);
+        background-color: var(--btn-color);
+        color: white;
+  }
+}
