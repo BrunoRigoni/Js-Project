@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/dashboard/dash.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>Ola, mundo!</h1>
+    <nav>
+        <div>
+            <h1 class="greeting">Seja bem vindo, Bruno</h1>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Perfil</a>
+            <a href="#"><img src="./assets/icons-dashboard/home-icons/bag-handle-outline.svg" alt="purchase-bag"></a>
+        </div>
+
+    </nav>
+    
+    <main id="carousel">
+        <h1 id="carousel-title"></h1>
+        <p id="carousel-text"></p>
+        <img id="carousel-image" src="" alt="">
+        <div id="controls">
+            <button class="btn-controls" id="prev"><img src="./assets/icons-dashboard/home-icons/play-back-outline.svg" alt=""></button>
+            <button class="btn-controls" id="next"><img src="./assets/icons-dashboard/home-icons/play-forward-outline.svg" alt=""></button>
+        
+        </div>
+    </main>
+
+    <script src="./scripts/dashboard-home.js"></script>
     
 </body>
 </html>
